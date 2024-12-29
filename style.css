@@ -1,0 +1,166 @@
+:root {
+    --blue-color: #4a90e2;
+    --white-color: #fff;
+    --red-color: #f44336;
+    --dark-red-color: #cb372d;
+    --green-color: #4caf50;
+    --dark-green-color: #398b3c;
+    --gray-color: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10%;
+}
+
+.head-container {
+    padding-top: 2rem;
+}
+
+.head-container h1 {
+    color: var(--blue-color);
+}
+
+.head-container p {
+    color: var(--gray-color);
+    font-size: .85rem;
+    margin-top: 0.35rem;
+    text-align: center;
+}
+
+.rules-container {
+    border: 2px solid var(--blue-color);
+    background-color: var(--white-color);
+    padding: 1.24rem;
+    border-radius: 8px;
+    min-width: 170px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+    &>.head {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        color: var(--blue-color);
+    }
+}
+
+.rules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttons-container button {
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    border-radius: 5px;
+    color: var(--white-color);
+    font-weight: 600;
+    width: 170px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: background-color .5s;
+}
+
+button.player-1-btn {
+    background-color: var(--green-color);
+
+    &:hover {
+        background-color: var(--dark-green-color);
+    }
+}
+
+button.player-2-btn {
+    background-color: var(--red-color);
+
+    &:hover {
+        background-color: var(--dark-red-color);
+    }
+}
+
+
+footer {
+    color: var(--gray-color);
+    font-size: 0.85rem;
+}
+
+a {
+    color: var(--gray-color);
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+
+}
+
+a:hover {
+    color: var(--blue-color);
+}
+
+.swal-confirm-btn {
+    background-color: var(--blue-color) !important;
+    /* Change to any color you prefer */
+    color: white !important;
+    /* Ensure the text is visible */
+    border: none;
+    /* Remove border */
+    padding: 10px 20px;
+    /* Optional padding to make it look better */
+    border-radius: 5px;
+    /* Optional rounded corners */
+}
+::selection {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 18px;
+    }
+
+    .head-container h1 {
+        margin-bottom: .45rem;
+        text-align: center;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+
+        &>button {
+            font-size: 1.3rem;
+        }
+    }
+
+    .rules-container {
+        width: 170px;
+        padding: 2rem 0;
+        font-size: 1.3rem;
+
+        &>.head {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+}
