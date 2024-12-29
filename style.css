@@ -108,8 +108,7 @@ footer {
 }
 
 a {
-    color: var(--gray-color);
-    text-decoration: none;
+    color: var(--blue-color);
     position: relative;
     font-weight: 600;
 
@@ -121,20 +120,17 @@ a:hover {
 
 .swal-confirm-btn {
     background-color: var(--blue-color) !important;
-    /* Change to any color you prefer */
     color: white !important;
-    /* Ensure the text is visible */
     border: none;
-    /* Remove border */
     padding: 10px 20px;
-    /* Optional padding to make it look better */
     border-radius: 5px;
-    /* Optional rounded corners */
 }
+
 ::selection {
     background-color: var(--blue-color);
     color: var(--white-color);
 }
+
 @media only screen and (max-width: 500px) {
     body {
         font-size: 18px;
