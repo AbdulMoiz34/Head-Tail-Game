@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- sweet alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <main>
+    <div class="head-container">
+      <h1>🎲 Head-Tail Game</h1>
+      <p>A fun 2-players game made with javascript</p>
+    </div>
+    <div class="rules-container">
+      <div class="head">Rules:</div>
+      <div class="rules">
+        <div><b> Head</b> = 1</div>
+        <div><b>Tail</b> = 0</div>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <button class="player-1-btn" onclick="player1()">Player 1</button>
+      <button class="player-2-btn" onclick="player2()">Player 2</button>
+    </div>
+    <footer>
+      &copy;2024 Head-Tail Game | Developed by
+      <a href="https://github.com/AbdulMoiz34" target="_blank">Abdul Moiz</a>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
